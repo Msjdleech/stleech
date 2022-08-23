@@ -60,8 +60,9 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton(f"{START_BTN1_NAME}", f"{START_BTN1_URL}")
-    buttons.buildbutton(f"{START_BTN2_NAME}", f"{START_BTN2_URL}")
+    buttons.buildbutton(f"{⚔️Join Chennal⚔️}", f"{https://t.me/stmirror1}")
+    buttons.buildbutton(f"{🧑‍💻Mirror Group}", f"{https://t.me/stmirrorleechbot}")
+    buttons.buildbutton(f"{🔰Master🔰}", f"{https://t.me/STThamizhan}")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -195,7 +196,7 @@ help_string = f'''
 Hei, Need Help!!
 '''
 help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='ST✓ Mirror Help',
         content=help_string_telegraph + sudo_help_string,
     )["path"]
 
