@@ -60,9 +60,9 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton(f"{⚔️Join Chennal⚔️}", f"{https://t.me/stmirror1}")
-    buttons.buildbutton(f"{🧑‍💻Mirror Group}", f"{https://t.me/stmirrorleechbot}")
-    buttons.buildbutton(f"{🔰Master🔰}", f"{https://t.me/STThamizhan}")
+    buttons.buildbutton(f"{⚔Join Chennal}", f"{https://t.me/stmirror1}")
+    buttons.buildbutton(f"{Mirror Group}", f"{https://t.me/stmirrorleechbot}")
+    buttons.buildbutton(f"{Master}", f"{https://t.me/STThamizhan}")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
