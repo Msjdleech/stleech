@@ -63,7 +63,7 @@ def start(update, context):
     buttons.buildbutton(f"{⚔️Join Chennal⚔️}", f"{https://t.me/stmirror1}")
     buttons.buildbutton(f"{🧑‍💻Mirror Group}", f"{https://t.me/stmirrorleechbot}")
     buttons.buildbutton(f"{🔰Master🔰}", f"{https://t.me/STThamizhan}")
-    reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
+    reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
 This bot can mirror all your links to Google Drive!
